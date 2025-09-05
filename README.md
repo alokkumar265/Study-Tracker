@@ -1,4 +1,4 @@
-Study Tracker App development 
+I'mStudy Tracker App development 
 
 Perfect — this is totally doable and you’ve already described everything needed for a production-grade, sellable product. I took your extra requirements (students can self-create full-day timetables, invite any guardians/mentors/teachers, multi-role logins, hierarchical developer→admin permissions, notifications on WhatsApp/Telegram/push, audit & anti-cheat) and turned them into a concrete production plan you can build from today.
 
@@ -1167,3 +1167,46 @@ Celebrate 🚀🎉
 
 Do you also want me to now create a master roadmap combining all 60 phases (DB + Backend + Frontend + Integration/Deployment) into one big timeline, so you’ll have a complete production project plan from scratch to launch?
 
+
+study-tracker-app/
+│── docs/                   # Project documentation (API, diagrams, features)
+│── infra/                  # DevOps (Docker, Kubernetes, CI/CD configs)
+│
+│── backend/                # Express + Node.js APIs
+│   ├── src/
+│   │   ├── config/         # Env, logger, db connections
+│   │   ├── models/         # Mongoose schemas
+│   │   ├── controllers/    # Route logic
+│   │   ├── routes/         # API routes
+│   │   ├── services/       # Notifications, reports
+│   │   ├── middleware/     # Auth, role-based access
+│   │   ├── utils/          # Helpers
+│   │   └── tests/          # Jest + Supertest
+│   ├── package.json
+│   └── README.md
+│
+│── frontend/               # React (Student/Parent/Teacher/Admin dashboards)
+│   ├── public/
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/       # API calls (Axios)
+│   │   ├── context/
+│   │   ├── hooks/
+│   │   ├── styles/
+│   │   └── tests/          # React Testing Library
+│   ├── package.json
+│   └── README.md
+│
+│── database/               # Database schema + migrations
+│   ├── migrations/         # Migration scripts
+│   ├── seeders/            # Initial seed data
+│   ├── models/             # Shared schema docs
+│   └── README.md
+│
+│── tests/                  # End-to-End (Cypress/Playwright)
+│── scripts/                # Automation scripts (backup, deploy)
+│── docker-compose.yml      # Local dev setup
+│── .env.example
+└── README.md
