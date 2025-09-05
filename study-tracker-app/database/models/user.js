@@ -22,6 +22,11 @@ const userSchema = new mongoose.Schema({
   unique: true,
   match: [/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/, 'Please enter a valid email address']
   },
+  password: {
+    type: String,
+    required: true,
+    select: false
+  },
   tz: {
     type: String,
     default: 'Asia/Kolkata'
