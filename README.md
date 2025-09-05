@@ -1,4 +1,4 @@
-Study Tracker 
+Study Tracker App development 
 
 Perfect — this is totally doable and you’ve already described everything needed for a production-grade, sellable product. I took your extra requirements (students can self-create full-day timetables, invite any guardians/mentors/teachers, multi-role logins, hierarchical developer→admin permissions, notifications on WhatsApp/Telegram/push, audit & anti-cheat) and turned them into a concrete production plan you can build from today.
 
