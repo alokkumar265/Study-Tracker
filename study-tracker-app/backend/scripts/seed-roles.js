@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 require('dotenv').config({ path: '../../.env.dev' });
-const UserRole = require('../../database/models/userRole');
+const Role = require('../../database/models/role');
 
 const roles = [
   { name: 'developer', permissions: ['*'] },
@@ -13,7 +13,7 @@ const roles = [
 async function seed() {
   await mongoose.connect(process.env.MONGODB_URI);
   for (const role of roles) {
-    await UserRole.updateOne({ name: role.name }, { $set: role }, { upsert: true });
+    await Role.updateOne({ name: role.name }, { $set: role }, { upsert: true });
     console.log('Seeded role:', role.name);
   }
   await mongoose.disconnect();
