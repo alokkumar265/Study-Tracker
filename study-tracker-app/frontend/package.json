@@ -24,6 +24,7 @@
     "@storybook/react": "^9.1.4",
     "@storybook/react-webpack5": "^7.6.15"
   },
+  "proxy": "http://localhost:4000",
   "browserslist": {
     "production": [
       ">0.2%",
